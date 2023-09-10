@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD1A71942AAC115C00DA3D33 /* RewardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71932AAC115C00DA3D33 /* RewardsViewModel.swift */; };
+		DD1A71992AAC11B100DA3D33 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71982AAC11B100DA3D33 /* APIConstant.swift */; };
+		DD1A719B2AAC11D900DA3D33 /* RewardsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A719A2AAC11D900DA3D33 /* RewardsModel.swift */; };
+		DD1A719E2AAC120E00DA3D33 /* FetchRewardsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A719D2AAC120E00DA3D33 /* FetchRewardsService.swift */; };
+		DD1A71A02AAC122B00DA3D33 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A719F2AAC122B00DA3D33 /* Router.swift */; };
+		DD1A71A22AAC138A00DA3D33 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71A12AAC138A00DA3D33 /* Utils.swift */; };
+		DD1A71A42AAC13FF00DA3D33 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71A32AAC13FF00DA3D33 /* RouterTests.swift */; };
+		DD1A71A62AAC1A5800DA3D33 /* InflowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71A52AAC1A5800DA3D33 /* InflowView.swift */; };
+		DD1A71A82AAC1A6E00DA3D33 /* OutflowVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71A72AAC1A6E00DA3D33 /* OutflowVew.swift */; };
+		DD1A71AF2AACA43100DA3D33 /* RewardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71AE2AACA43100DA3D33 /* RewardsViewModel.swift */; };
+		DD1A71B12AAD228600DA3D33 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71B02AAD228600DA3D33 /* NavigationBar.swift */; };
+		DD1A71B52AAD22D000DA3D33 /* BarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71B42AAD22D000DA3D33 /* BarButton.swift */; };
+		DD1A71BA2AAD239400DA3D33 /* BaseColours.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71B92AAD239400DA3D33 /* BaseColours.swift */; };
+		DD1A71BC2AAD23AC00DA3D33 /* Colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD1A71BB2AAD23AC00DA3D33 /* Colours.xcassets */; };
+		DD1A71BF2AAD31A500DA3D33 /* Rewards.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD1A71BE2AAD31A500DA3D33 /* Rewards.strings */; };
+		DD1A71C22AAD409000DA3D33 /* ProfileDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71C12AAD409000DA3D33 /* ProfileDetailsView.swift */; };
+		DD1A71C42AAD40A400DA3D33 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71C32AAD40A400DA3D33 /* ChartView.swift */; };
+		DD1A71C62AAD40C600DA3D33 /* ButtonsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71C52AAD40C600DA3D33 /* ButtonsContainer.swift */; };
+		DD1A71C92AAD410D00DA3D33 /* RewardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71C82AAD410D00DA3D33 /* RewardRow.swift */; };
+		DD1A71DD2AAD69FF00DA3D33 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = DD1A71DC2AAD69FF00DA3D33 /* SwiftUICharts */; };
+		DD1A71DF2AAD6A7A00DA3D33 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71DE2AAD6A7A00DA3D33 /* PieChartView.swift */; };
+		DD1A71E12AAD8C5D00DA3D33 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1A71E02AAD8C5D00DA3D33 /* RoundedCorner.swift */; };
+		DD3A1EE22AADA16B007755D9 /* UIScreen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3A1EE12AADA16B007755D9 /* UIScreen+Size.swift */; };
+		DD3A1EE42AADE062007755D9 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3A1EE32AADE062007755D9 /* ErrorView.swift */; };
+		DD3A1EE62AADE071007755D9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3A1EE52AADE071007755D9 /* LoadingView.swift */; };
+		DD3A1EE82AADE083007755D9 /* EmptyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3A1EE72AADE083007755D9 /* EmptyDataView.swift */; };
+		DD3A1EEA2AADE0DB007755D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD3A1EE92AADE0DB007755D9 /* Localizable.strings */; };
+		DD3D568E2AA7EA86007ACB81 /* RewardsiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3D568D2AA7EA86007ACB81 /* RewardsiOSApp.swift */; };
+		DD3D56902AA7EA86007ACB81 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3D568F2AA7EA86007ACB81 /* RewardsView.swift */; };
+		DD3D56922AA7EA87007ACB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3D56912AA7EA87007ACB81 /* Assets.xcassets */; };
+		DD3D56962AA7EA87007ACB81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD3D56952AA7EA87007ACB81 /* Preview Assets.xcassets */; };
+		DD3D56A02AA7EA87007ACB81 /* RewardsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3D569F2AA7EA87007ACB81 /* RewardsiOSTests.swift */; };
+		DD3D56AA2AA7EA87007ACB81 /* RewardsiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3D56A92AA7EA87007ACB81 /* RewardsiOSUITests.swift */; };
+		DD3D56AC2AA7EA87007ACB81 /* RewardsiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3D56AB2AA7EA87007ACB81 /* RewardsiOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD3D569C2AA7EA87007ACB81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD3D56822AA7EA86007ACB81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD3D56892AA7EA86007ACB81;
+			remoteInfo = RewardsiOS;
+		};
+		DD3D56A62AA7EA87007ACB81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD3D56822AA7EA86007ACB81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD3D56892AA7EA86007ACB81;
+			remoteInfo = RewardsiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD1A71932AAC115C00DA3D33 /* RewardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewModel.swift; sourceTree = "<group>"; };
+		DD1A71982AAC11B100DA3D33 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		DD1A719A2AAC11D900DA3D33 /* RewardsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsModel.swift; sourceTree = "<group>"; };
+		DD1A719D2AAC120E00DA3D33 /* FetchRewardsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRewardsService.swift; sourceTree = "<group>"; };
+		DD1A719F2AAC122B00DA3D33 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		DD1A71A12AAC138A00DA3D33 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DD1A71A32AAC13FF00DA3D33 /* RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
+		DD1A71A52AAC1A5800DA3D33 /* InflowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InflowView.swift; sourceTree = "<group>"; };
+		DD1A71A72AAC1A6E00DA3D33 /* OutflowVew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutflowVew.swift; sourceTree = "<group>"; };
+		DD1A71AE2AACA43100DA3D33 /* RewardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewModel.swift; sourceTree = "<group>"; };
+		DD1A71B02AAD228600DA3D33 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		DD1A71B42AAD22D000DA3D33 /* BarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarButton.swift; sourceTree = "<group>"; };
+		DD1A71B92AAD239400DA3D33 /* BaseColours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseColours.swift; sourceTree = "<group>"; };
+		DD1A71BB2AAD23AC00DA3D33 /* Colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colours.xcassets; sourceTree = "<group>"; };
+		DD1A71BE2AAD31A500DA3D33 /* Rewards.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Rewards.strings; sourceTree = "<group>"; };
+		DD1A71C12AAD409000DA3D33 /* ProfileDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsView.swift; sourceTree = "<group>"; };
+		DD1A71C32AAD40A400DA3D33 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		DD1A71C52AAD40C600DA3D33 /* ButtonsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsContainer.swift; sourceTree = "<group>"; };
+		DD1A71C82AAD410D00DA3D33 /* RewardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardRow.swift; sourceTree = "<group>"; };
+		DD1A71DE2AAD6A7A00DA3D33 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		DD1A71E02AAD8C5D00DA3D33 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		DD3A1EE12AADA16B007755D9 /* UIScreen+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Size.swift"; sourceTree = "<group>"; };
+		DD3A1EE32AADE062007755D9 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		DD3A1EE52AADE071007755D9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		DD3A1EE72AADE083007755D9 /* EmptyDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataView.swift; sourceTree = "<group>"; };
+		DD3A1EE92AADE0DB007755D9 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		DD3D568A2AA7EA86007ACB81 /* RewardsiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RewardsiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3D568D2AA7EA86007ACB81 /* RewardsiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsiOSApp.swift; sourceTree = "<group>"; };
+		DD3D568F2AA7EA86007ACB81 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
+		DD3D56912AA7EA87007ACB81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD3D56932AA7EA87007ACB81 /* RewardsiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RewardsiOS.entitlements; sourceTree = "<group>"; };
+		DD3D56952AA7EA87007ACB81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD3D569B2AA7EA87007ACB81 /* RewardsiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RewardsiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3D569F2AA7EA87007ACB81 /* RewardsiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsiOSTests.swift; sourceTree = "<group>"; };
+		DD3D56A52AA7EA87007ACB81 /* RewardsiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RewardsiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3D56A92AA7EA87007ACB81 /* RewardsiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsiOSUITests.swift; sourceTree = "<group>"; };
+		DD3D56AB2AA7EA87007ACB81 /* RewardsiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD3D56872AA7EA86007ACB81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1A71DD2AAD69FF00DA3D33 /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3D56982AA7EA87007ACB81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3D56A22AA7EA87007ACB81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD1A718C2AAC0FEB00DA3D33 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71C02AAD407200DA3D33 /* Rewards */,
+				DD1A71C72AAD40D100DA3D33 /* RewardsList */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		DD1A718D2AAC0FFA00DA3D33 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71932AAC115C00DA3D33 /* RewardsViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		DD1A718E2AAC101000DA3D33 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A719C2AAC11E800DA3D33 /* restClient */,
+				DD1A719D2AAC120E00DA3D33 /* FetchRewardsService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		DD1A718F2AAC101800DA3D33 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A719A2AAC11D900DA3D33 /* RewardsModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DD1A71902AAC102400DA3D33 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71982AAC11B100DA3D33 /* APIConstant.swift */,
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		DD1A71912AAC103B00DA3D33 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71B32AAD22BE00DA3D33 /* buttons */,
+				DD1A71B22AAD22AB00DA3D33 /* navigationBar */,
+				DD3A1EE32AADE062007755D9 /* ErrorView.swift */,
+				DD3A1EE52AADE071007755D9 /* LoadingView.swift */,
+				DD3A1EE72AADE083007755D9 /* EmptyDataView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		DD1A71972AAC119D00DA3D33 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71A12AAC138A00DA3D33 /* Utils.swift */,
+				DD1A71E02AAD8C5D00DA3D33 /* RoundedCorner.swift */,
+				DD3A1EE12AADA16B007755D9 /* UIScreen+Size.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		DD1A719C2AAC11E800DA3D33 /* restClient */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A719F2AAC122B00DA3D33 /* Router.swift */,
+			);
+			path = restClient;
+			sourceTree = "<group>";
+		};
+		DD1A71B22AAD22AB00DA3D33 /* navigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71B02AAD228600DA3D33 /* NavigationBar.swift */,
+			);
+			path = navigationBar;
+			sourceTree = "<group>";
+		};
+		DD1A71B32AAD22BE00DA3D33 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71B42AAD22D000DA3D33 /* BarButton.swift */,
+			);
+			path = buttons;
+			sourceTree = "<group>";
+		};
+		DD1A71B62AAD234B00DA3D33 /* appStyling */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71B72AAD235800DA3D33 /* colours */,
+			);
+			path = appStyling;
+			sourceTree = "<group>";
+		};
+		DD1A71B72AAD235800DA3D33 /* colours */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71B92AAD239400DA3D33 /* BaseColours.swift */,
+				DD1A71BB2AAD23AC00DA3D33 /* Colours.xcassets */,
+			);
+			path = colours;
+			sourceTree = "<group>";
+		};
+		DD1A71BD2AAD318100DA3D33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71BE2AAD31A500DA3D33 /* Rewards.strings */,
+				DD3D56912AA7EA87007ACB81 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD1A71C02AAD407200DA3D33 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71CC2AAD5F6200DA3D33 /* PieChart */,
+				DD3D568F2AA7EA86007ACB81 /* RewardsView.swift */,
+				DD1A71C32AAD40A400DA3D33 /* ChartView.swift */,
+				DD1A71C52AAD40C600DA3D33 /* ButtonsContainer.swift */,
+				DD1A71C12AAD409000DA3D33 /* ProfileDetailsView.swift */,
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		DD1A71C72AAD40D100DA3D33 /* RewardsList */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71A52AAC1A5800DA3D33 /* InflowView.swift */,
+				DD1A71A72AAC1A6E00DA3D33 /* OutflowVew.swift */,
+				DD1A71C82AAD410D00DA3D33 /* RewardRow.swift */,
+			);
+			path = RewardsList;
+			sourceTree = "<group>";
+		};
+		DD1A71CC2AAD5F6200DA3D33 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				DD1A71DE2AAD6A7A00DA3D33 /* PieChartView.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
+		DD3D56812AA7EA86007ACB81 = {
+			isa = PBXGroup;
+			children = (
+				DD3D568C2AA7EA86007ACB81 /* RewardsiOS */,
+				DD3D569E2AA7EA87007ACB81 /* RewardsiOSTests */,
+				DD3D56A82AA7EA87007ACB81 /* RewardsiOSUITests */,
+				DD3D568B2AA7EA86007ACB81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD3D568B2AA7EA86007ACB81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD3D568A2AA7EA86007ACB81 /* RewardsiOS.app */,
+				DD3D569B2AA7EA87007ACB81 /* RewardsiOSTests.xctest */,
+				DD3D56A52AA7EA87007ACB81 /* RewardsiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD3D568C2AA7EA86007ACB81 /* RewardsiOS */ = {
+			isa = PBXGroup;
+			children = (
+				DD3D568D2AA7EA86007ACB81 /* RewardsiOSApp.swift */,
+				DD3A1EE92AADE0DB007755D9 /* Localizable.strings */,
+				DD1A71BD2AAD318100DA3D33 /* Resources */,
+				DD1A71B62AAD234B00DA3D33 /* appStyling */,
+				DD1A71972AAC119D00DA3D33 /* utils */,
+				DD1A71912AAC103B00DA3D33 /* components */,
+				DD1A71902AAC102400DA3D33 /* constants */,
+				DD1A718F2AAC101800DA3D33 /* model */,
+				DD1A718E2AAC101000DA3D33 /* service */,
+				DD1A718D2AAC0FFA00DA3D33 /* viewModel */,
+				DD1A718C2AAC0FEB00DA3D33 /* screens */,
+				DD3D56932AA7EA87007ACB81 /* RewardsiOS.entitlements */,
+				DD3D56942AA7EA87007ACB81 /* Preview Content */,
+			);
+			path = RewardsiOS;
+			sourceTree = "<group>";
+		};
+		DD3D56942AA7EA87007ACB81 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DD3D56952AA7EA87007ACB81 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD3D569E2AA7EA87007ACB81 /* RewardsiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD3D569F2AA7EA87007ACB81 /* RewardsiOSTests.swift */,
+				DD1A71AE2AACA43100DA3D33 /* RewardsViewModel.swift */,
+				DD1A71A32AAC13FF00DA3D33 /* RouterTests.swift */,
+			);
+			path = RewardsiOSTests;
+			sourceTree = "<group>";
+		};
+		DD3D56A82AA7EA87007ACB81 /* RewardsiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD3D56A92AA7EA87007ACB81 /* RewardsiOSUITests.swift */,
+				DD3D56AB2AA7EA87007ACB81 /* RewardsiOSUITestsLaunchTests.swift */,
+			);
+			path = RewardsiOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD3D56892AA7EA86007ACB81 /* RewardsiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD3D56AF2AA7EA87007ACB81 /* Build configuration list for PBXNativeTarget "RewardsiOS" */;
+			buildPhases = (
+				DD3D56862AA7EA86007ACB81 /* Sources */,
+				DD3D56872AA7EA86007ACB81 /* Frameworks */,
+				DD3D56882AA7EA86007ACB81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RewardsiOS;
+			packageProductDependencies = (
+				DD1A71DC2AAD69FF00DA3D33 /* SwiftUICharts */,
+			);
+			productName = RewardsiOS;
+			productReference = DD3D568A2AA7EA86007ACB81 /* RewardsiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD3D569A2AA7EA87007ACB81 /* RewardsiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD3D56B22AA7EA87007ACB81 /* Build configuration list for PBXNativeTarget "RewardsiOSTests" */;
+			buildPhases = (
+				DD3D56972AA7EA87007ACB81 /* Sources */,
+				DD3D56982AA7EA87007ACB81 /* Frameworks */,
+				DD3D56992AA7EA87007ACB81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD3D569D2AA7EA87007ACB81 /* PBXTargetDependency */,
+			);
+			name = RewardsiOSTests;
+			productName = RewardsiOSTests;
+			productReference = DD3D569B2AA7EA87007ACB81 /* RewardsiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD3D56A42AA7EA87007ACB81 /* RewardsiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD3D56B52AA7EA87007ACB81 /* Build configuration list for PBXNativeTarget "RewardsiOSUITests" */;
+			buildPhases = (
+				DD3D56A12AA7EA87007ACB81 /* Sources */,
+				DD3D56A22AA7EA87007ACB81 /* Frameworks */,
+				DD3D56A32AA7EA87007ACB81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD3D56A72AA7EA87007ACB81 /* PBXTargetDependency */,
+			);
+			name = RewardsiOSUITests;
+			productName = RewardsiOSUITests;
+			productReference = DD3D56A52AA7EA87007ACB81 /* RewardsiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD3D56822AA7EA86007ACB81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DD3D56892AA7EA86007ACB81 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					DD3D569A2AA7EA87007ACB81 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DD3D56892AA7EA86007ACB81;
+					};
+					DD3D56A42AA7EA87007ACB81 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DD3D56892AA7EA86007ACB81;
+					};
+				};
+			};
+			buildConfigurationList = DD3D56852AA7EA86007ACB81 /* Build configuration list for PBXProject "RewardsiOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD3D56812AA7EA86007ACB81;
+			packageReferences = (
+				DD1A71DB2AAD69FF00DA3D33 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+			);
+			productRefGroup = DD3D568B2AA7EA86007ACB81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD3D56892AA7EA86007ACB81 /* RewardsiOS */,
+				DD3D569A2AA7EA87007ACB81 /* RewardsiOSTests */,
+				DD3D56A42AA7EA87007ACB81 /* RewardsiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD3D56882AA7EA86007ACB81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3A1EEA2AADE0DB007755D9 /* Localizable.strings in Resources */,
+				DD3D56962AA7EA87007ACB81 /* Preview Assets.xcassets in Resources */,
+				DD1A71BC2AAD23AC00DA3D33 /* Colours.xcassets in Resources */,
+				DD1A71BF2AAD31A500DA3D33 /* Rewards.strings in Resources */,
+				DD3D56922AA7EA87007ACB81 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3D56992AA7EA87007ACB81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3D56A32AA7EA87007ACB81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD3D56862AA7EA86007ACB81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1A71DF2AAD6A7A00DA3D33 /* PieChartView.swift in Sources */,
+				DD1A71A02AAC122B00DA3D33 /* Router.swift in Sources */,
+				DD1A71B52AAD22D000DA3D33 /* BarButton.swift in Sources */,
+				DD3A1EE62AADE071007755D9 /* LoadingView.swift in Sources */,
+				DD1A719E2AAC120E00DA3D33 /* FetchRewardsService.swift in Sources */,
+				DD3A1EE42AADE062007755D9 /* ErrorView.swift in Sources */,
+				DD1A71A22AAC138A00DA3D33 /* Utils.swift in Sources */,
+				DD1A71A82AAC1A6E00DA3D33 /* OutflowVew.swift in Sources */,
+				DD1A71E12AAD8C5D00DA3D33 /* RoundedCorner.swift in Sources */,
+				DD1A71C22AAD409000DA3D33 /* ProfileDetailsView.swift in Sources */,
+				DD1A71B12AAD228600DA3D33 /* NavigationBar.swift in Sources */,
+				DD1A71A62AAC1A5800DA3D33 /* InflowView.swift in Sources */,
+				DD1A71BA2AAD239400DA3D33 /* BaseColours.swift in Sources */,
+				DD1A71942AAC115C00DA3D33 /* RewardsViewModel.swift in Sources */,
+				DD1A71C42AAD40A400DA3D33 /* ChartView.swift in Sources */,
+				DD1A719B2AAC11D900DA3D33 /* RewardsModel.swift in Sources */,
+				DD1A71C62AAD40C600DA3D33 /* ButtonsContainer.swift in Sources */,
+				DD3A1EE22AADA16B007755D9 /* UIScreen+Size.swift in Sources */,
+				DD3D56902AA7EA86007ACB81 /* RewardsView.swift in Sources */,
+				DD3A1EE82AADE083007755D9 /* EmptyDataView.swift in Sources */,
+				DD1A71C92AAD410D00DA3D33 /* RewardRow.swift in Sources */,
+				DD1A71992AAC11B100DA3D33 /* APIConstant.swift in Sources */,
+				DD3D568E2AA7EA86007ACB81 /* RewardsiOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3D56972AA7EA87007ACB81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1A71AF2AACA43100DA3D33 /* RewardsViewModel.swift in Sources */,
+				DD1A71A42AAC13FF00DA3D33 /* RouterTests.swift in Sources */,
+				DD3D56A02AA7EA87007ACB81 /* RewardsiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3D56A12AA7EA87007ACB81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3D56AA2AA7EA87007ACB81 /* RewardsiOSUITests.swift in Sources */,
+				DD3D56AC2AA7EA87007ACB81 /* RewardsiOSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD3D569D2AA7EA87007ACB81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD3D56892AA7EA86007ACB81 /* RewardsiOS */;
+			targetProxy = DD3D569C2AA7EA87007ACB81 /* PBXContainerItemProxy */;
+		};
+		DD3D56A72AA7EA87007ACB81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD3D56892AA7EA86007ACB81 /* RewardsiOS */;
+			targetProxy = DD3D56A62AA7EA87007ACB81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD3D56AD2AA7EA87007ACB81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD3D56AE2AA7EA87007ACB81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DD3D56B02AA7EA87007ACB81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RewardsiOS/RewardsiOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RewardsiOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xemt.co.nz.RewardsiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD3D56B12AA7EA87007ACB81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RewardsiOS/RewardsiOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RewardsiOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xemt.co.nz.RewardsiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD3D56B32AA7EA87007ACB81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xemt.co.nz.RewardsiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RewardsiOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RewardsiOS";
+			};
+			name = Debug;
+		};
+		DD3D56B42AA7EA87007ACB81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xemt.co.nz.RewardsiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RewardsiOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RewardsiOS";
+			};
+			name = Release;
+		};
+		DD3D56B62AA7EA87007ACB81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xemt.co.nz.RewardsiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RewardsiOS;
+			};
+			name = Debug;
+		};
+		DD3D56B72AA7EA87007ACB81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xemt.co.nz.RewardsiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RewardsiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD3D56852AA7EA86007ACB81 /* Build configuration list for PBXProject "RewardsiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3D56AD2AA7EA87007ACB81 /* Debug */,
+				DD3D56AE2AA7EA87007ACB81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD3D56AF2AA7EA87007ACB81 /* Build configuration list for PBXNativeTarget "RewardsiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3D56B02AA7EA87007ACB81 /* Debug */,
+				DD3D56B12AA7EA87007ACB81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD3D56B22AA7EA87007ACB81 /* Build configuration list for PBXNativeTarget "RewardsiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3D56B32AA7EA87007ACB81 /* Debug */,
+				DD3D56B42AA7EA87007ACB81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD3D56B52AA7EA87007ACB81 /* Build configuration list for PBXNativeTarget "RewardsiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3D56B62AA7EA87007ACB81 /* Debug */,
+				DD3D56B72AA7EA87007ACB81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD1A71DB2AAD69FF00DA3D33 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD1A71DC2AAD69FF00DA3D33 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD1A71DB2AAD69FF00DA3D33 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DD3D56822AA7EA86007ACB81 /* Project object */;
+}
